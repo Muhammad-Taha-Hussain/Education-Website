@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    $("button").click(function(){
+        $("a").attr("href", function(i, origValue){
+        return origValue + "/google.com";
+  });
+    $('a').text('Jquery tutorial');
+  });
+    $('input').focus(function() {
+        $('input').css('background-color', 'yellow');
+    });
+    $('input').blur(function() {
+        $('input').css('background-color', '');
+    });
+    $('p').mouseenter(function() {
+        let text = $('p').text();
+        console.log(text);
+        $('input').val(text);
+    });
+    $('.panel').click(function() {
+        $('.panel').css('margin', '10px');
+        $('.panelshow').slideToggle('slow');
+        $("div.panel").animate({
+            opacity: '0.8',
+            height: '+=500px',
+            width: '+=600px'
+        });
+    });
+});
+</script>
+</head>
+<body>
+
+
+<a href="www.google.com">Google</a>
+<p>If you click on me, I will disappear.</p>
+<p class="show" style="display: none;">Click me away!</p>
+<p>Click me too!</p>
+<input type="text">
+<button>click me</button>
+
+<div class="panel" style="width: 300px; background-color: aqua; overflow: hidden; cursor: pointer;">
+    <p>Click to show the panel</p>
+    <div class="panelshow" style = 'background-color: lightblue; display: none;'>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi similique architecto, ullam illo perferendis repudiandae placeat voluptates at dolores nostrum!
+    </div>
+</div>
+
+</body>
+</html>
