@@ -1,26 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <!-- font awesome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <!-- custom css link -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="Tooplate">
+
+        <title>Punjab Schools Website</title>
+
+        <!-- CSS FILES -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+                
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="./css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="./css/style.css" rel="stylesheet">
+
+    </head>
 <body>
     <!-- header section starts -->
-    <header class="header">
+    <!-- <header class="navbar sticky-top flex-md-nowrap">
+        <div class="col-md-3 col-lg-3 me-0 px-3 fs-6">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi-box"></i>
+                Punjab Group of Scools
+            </a>
+        </div>
+
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <form class="custom-form header-form ms-lg-3 ms-md-3 me-lg-auto me-md-auto order-2 order-lg-0 order-md-0" action="#" method="get" role="form">
+            <input class="form-control" name="search" type="text" placeholder="Search" aria-label="Search">
+        </form>
+
+        <div class="navbar-nav me-lg-2">
+            <div class="nav-item text-nowrap d-flex align-items-center">
+                <div class="dropdown ps-3">
+                    <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="navbarLightDropdownMenuLink">
+                        <i class="bi-bell"></i>
+                        <span class="position-absolute start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-lg-end notifications-block-wrap bg-white shadow" aria-labelledby="navbarLightDropdownMenuLink">
+                        <small>Notifications</small>
+
+                        <li class="notifications-block border-bottom pb-2 mb-2">
+                            <a class="dropdown-item d-flex  align-items-center" href="#">
+                                <div class="notifications-icon-wrap bg-success">
+                                    <i class="notifications-icon bi-check-circle-fill"></i>
+                                </div>
+
+                                <div>
+                                    <span>Your account has been created successfuly.</span>
+
+                                    <p>12 days ago</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="notifications-block border-bottom pb-2 mb-2">
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="notifications-icon-wrap bg-info">
+                                    <i class="notifications-icon bi-folder"></i>
+                                </div>
+
+                                <div>
+                                    <span>Please check. We have sent a Daily report.</span>
+
+                                    <p>10 days ago</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="notifications-block">
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="notifications-icon-wrap bg-danger">
+                                    <i class="notifications-icon bi-question-circle"></i>
+                                </div>
+
+                                <div>
+                                    <span>Account verification failed.</span>
+
+                                    <p>1 hour ago</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="dropdown ps-1">
+                    <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi-three-dots-vertical"></i>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-social bg-white shadow">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-4">
+                                    <a class="dropdown-item text-center" href="#">
+                                        <img src="images/social/search.png" class="profile-image img-fluid" alt="">
+                                        <span class="d-block">Google</span>
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-4 col-md-4 col-4">
+                                    <a class="dropdown-item text-center" href="#">
+                                        <img src="images/social/spotify.png" class="profile-image img-fluid" alt="">
+                                        <span class="d-block">Spotify</span>
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-4 col-md-4 col-4">
+                                    <a class="dropdown-item text-center" href="#">
+                                        <img src="images/social/telegram.png" class="profile-image img-fluid" alt="">
+                                        <span class="d-block">Telegram</span>
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-4 col-md-4 col-4">
+                                    <a class="dropdown-item text-center" href="#">
+                                        <img src="images/social/snapchat.png" class="profile-image img-fluid" alt="">
+                                        <span class="d-block">Snapchat</span>
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-4 col-md-4 col-4">
+                                    <a class="dropdown-item text-center" href="#">
+                                        <img src="images/social/tiktok.png" class="profile-image img-fluid" alt="">
+                                        <span class="d-block">Tiktok</span>
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-4 col-md-4 col-4">
+                                    <a class="dropdown-item text-center" href="#">
+                                        <img src="images/social/youtube.png" class="profile-image img-fluid" alt="">
+                                        <span class="d-block">Youtube</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dropdown px-3">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="images/medium-shot-happy-man-smiling.jpg" class="profile-image img-fluid" alt="">
+                    </a>
+                    <ul class="dropdown-menu bg-white shadow">
+                        <li>
+                            <div class="dropdown-menu-profile-thumb d-flex">
+                                <img src="images/medium-shot-happy-man-smiling.jpg" class="profile-image img-fluid me-3" alt="">
+
+                                <div class="d-flex flex-column">
+                                    <small>Thomas</small>
+                                    <a href="#">thomas@site.com</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="profile.html">
+                                <i class="bi-person me-2"></i>
+                                Profile
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="setting.html">
+                                <i class="bi-gear me-2"></i>
+                                Settings
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="help-center.html">
+                                <i class="bi-question-circle me-2"></i>
+                                Help
+                            </a>
+                        </li>
+
+                        <li class="border-top mt-3 pt-2 mx-4">
+                            <a class="dropdown-item ms-0 me-0" href="#">
+                                <i class="bi-box-arrow-left me-2"></i>
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header> -->
+     <header class="header">
         <section class="flex">
-            <a href="home.html" class="logo">Imperial COMSAT Academy</a>
+            <a href="home.html" class="logo">Punjab Schools System</a>
             <form action="" method="post" class="search-form">
                 <input type="text" name="search-box" placeholder="search courses..." required maxlength="100">
                 <button type="submit" class="fas fa-search" name="search-box"></button>
             </form>
             <div class="icons">
-                <div id="menu-btn" class="fas fa-bars"></div>
                 <div id="search-btn" class="fas fa-search"></div>
+                <div id="menu-btn" class="fas fa-bars"></div>
                 <div id="user-btn" class="fas fa-user"></div>
                 <div id="toggle-btn" class="fas fa-sun"></div>
             </div>
@@ -42,166 +233,173 @@
 
     <!-- header section ends -->
     <!-- side bar section starts -->
-    <div class="side-bar">
-        <div class="close-side-bar">
-            <i class="fas fa-times"></i>
-        </div>
-        <div class="profile">
-            <img src="img/banner/b1.jpg" alt="">
-            <h3>Taha Hussain</h3>
-            <span>student</span>
-            <a href="profile.html" class="menu-btn">View Profile</a>
-        </div>
-        <nav class="navbar">
-            <a href="home.html"><i class="fas fa-home"><span>Home</span></i></a>
-            <a href="about.html"><i class="fas fa-question"><span>about us</span></i></a>
-            <a href="courses.html"><i class="fas fa-graduation-cap"><span>courses</span></i></a>
-            <a href="teachers.html"><i class="fas fa-chalkboard-user"><span>teachers</span></i></a>
-            <a href="contact.html"><i class="fas fa-headset"><span>contact us</span></i></a>
-        </nav>
+    <div class="grid">
+        <div class="side-bar"> 
+            <div class="close-side-bar">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="profile">
+                <img src="img/banner/b1.jpg" alt="">
+                <h3>Taha Hussain</h3>
+                <span>student</span>
+                <a href="profile.html" class="menu-btn">View Profile</a>
+            </div>
+            <nav class="navbar">
+                <a href="home.html"><i class="fas fa-home"><span>Home</span></i></a>
+                <a href="about.html"><i class="fas fa-question"><span>about us</span></i></a>
+                <a href="courses.html"><i class="fas fa-graduation-cap"><span>courses</span></i></a>
+                <a href="teachers.html"><i class="fas fa-chalkboard-user"><span>teachers</span></i></a>
+                <a href="contact.html"><i class="fas fa-headset"><span>contact us</span></i></a>
+            </nav>
+        </div> 
+        <!-- side bar section ends -->
+        <div class="main">
+            <!-- quick select selection starts -->
+        <section class="quick-select">
+            <h1 class="heading">Quick Options</h1>
+            <div class="box-container">
+    
+                <div class="box">
+                    <h3 class="title">likes and comments</h3>
+                    <p>Total Likes <span>14</span></p>
+                    <a href="#" class="inline-btn">view likes</a>
+                    <p>Total Comments <span>5</span></p>
+                    <a href="#" class="inline-btn">view comments</a>
+                    <p>Total Playlist <span>10</span></p>
+                    <a href="#" class="inline-btn">view playlist</a>
+                </div>
+    
+                <div class="box">
+                    <h3 class="title">Top Categories</h3>
+                    <div class="flex">
+                        <a href="#"><i class="fas fa-code"></i><span>development</span></a>
+                        <a href="#"><i class="fas fa-chart-simple"></i><span>buisness</span></a>
+                        <a href="#"><i class="fas fa-pen"></i><span>design</span></a>
+                        <a href="#"><i class="fas fa-chart-line"></i><span>marketing</span></a>
+                        <a href="#"><i class="fas fa-music"></i><span>music</span></a>
+                        <a href="#"><i class="fas fa-camera"></i><span>photography</span></a>
+                        <a href="#"><i class="fas fa-cog"></i><span>software</span></a>
+                        <a href="#"><i class="fas fa-vial"></i><span>science</span></a>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <h3 class="title">Popular Topics</h3>
+                    <div class="flex">
+                        <a href="#"><i class="fab fa-html5"></i><span>HTML5</span></a>
+                        <a href="#"><i class="fab fa-css3"></i><span>CSS</span></a>
+                        <a href="#"><i class="fab fa-js"></i><span>JavaScript
+                        </span></a>
+                        <a href="#"><i class="fab fa-react"></i><span>React</span></a>
+                        <a href="#"><i class="fab fa-php"></i><span>PHP</span></a>
+                        <a href="#"><i class="fab fa-bootstrap"></i><span>Bootstrap</span></a>
+                    </div>
+                </div>
+    
+                <div class="box tutor">
+                    <h3 class="title">become a tutor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis molestias veritatis facere ipsam illo nisi.</p>
+                    <a href="register.html" class="inline-btn">get started</a>
+                </div>
+            </div>
+        </section>
+        <!-- quick select selection ends -->
+    
+        <!-- courses section starts -->
+        <section class="courses">
+            <h1 class="heading">Our Courses</h1>
+            <div class="box-container">
+                <div class="box">
+                    <div class="tutor">
+                        <img src="img/about/a1.png" alt="">
+                        <h3>Mark</h3>
+                        <span>23-03-2024</span>
+                    </div>
+                    <img src="img/about/a1.png" class="thumb" alt="">
+                    <h3 class="title">complete marketing tutorial</h3>
+                    <a href="playlist.html" class="inline-btn">view playlist</a>
+                </div>
+    
+                <div class="box">
+                    <div class="tutor">
+                        <img src="img/about/a1.png" alt="">
+                        <h3>Mark</h3>
+                        <span>23-03-2024</span>
+                    </div>
+                    <img src="img/about/a1.png" class="thumb" alt="">
+                    <h3 class="title">complete marketing tutorial</h3>
+                    <a href="playlist.html" class="inline-btn">view playlist</a>
+                </div>
+    
+                <div class="box">
+                    <div class="tutor">
+                        <img src="img/about/a1.png" alt="">
+                        <h3>Mark</h3>
+                        <span>23-03-2024</span>
+                    </div>
+                    <img src="img/about/a1.png" class="thumb" alt="">
+                    <h3 class="title">complete marketing tutorial</h3>
+                    <a href="playlist.html" class="inline-btn">view playlist</a>
+                </div>
+    
+                <div class="box">
+                    <div class="tutor">
+                        <img src="img/about/a1.png" alt="">
+                        <h3>Mark</h3>
+                        <span>23-03-2024</span>
+                    </div>
+                    <img src="img/about/a1.png" class="thumb" alt="">
+                    <h3 class="title">complete marketing tutorial</h3>
+                    <a href="playlist.html" class="inline-btn">view playlist</a>
+                </div>
+    
+                <div class="box">
+                    <div class="tutor">
+                        <img src="img/about/a1.png" alt="">
+                        <h3>Mark</h3>
+                        <span>23-03-2024</span>
+                    </div>
+                    <img src="img/about/a1.png" class="thumb" alt="">
+                    <h3 class="title">complete marketing tutorial</h3>
+                    <a href="playlist.html" class="inline-btn">view playlist</a>
+                </div>
+    
+                <div class="box">
+                    <div class="tutor">
+                        <img src="img/about/a1.png" alt="">
+                        <h3>Mark</h3>
+                        <span>23-03-2024</span>
+                    </div>
+                    <img src="img/about/a1.png" class="thumb" alt="">
+                    <h3 class="title">complete marketing tutorial</h3>
+                    <a href="playlist.html" class="inline-btn">view playlist</a>
+                </div>
+       
+            </div>
+            <div class="more-btn">
+                <a href="courses.html" class="inline-option-btn">view more</a>
+            </div>
+        </section>
+        <!-- courses section ends -->
+    
+        <!-- footer section starts -->
+        <!-- <footer class="footer">
+            &copy; copyright @ 2024 by <span>Muhammad Taha Hussain </span>| all right reserved.
+        </footer> -->
+        <!-- footer section ends --> 
+        </div>   
+
     </div>
-    <!-- side bar section ends -->
-
-    <!-- quick select selection starts -->
-    <section class="quick-select">
-        <h1 class="heading">Quick Options</h1>
-        <div class="box-container">
-
-            <div class="box">
-                <h3 class="title">likes and comments</h3>
-                <p>Total Likes <span>14</span></p>
-                <a href="#" class="inline-btn">view likes</a>
-                <p>Total Comments <span>5</span></p>
-                <a href="#" class="inline-btn">view comments</a>
-                <p>Total Playlist <span>10</span></p>
-                <a href="#" class="inline-btn">view playlist</a>
-            </div>
-
-            <div class="box">
-                <h3 class="title">Top Categories</h3>
-                <div class="flex">
-                    <a href="#"><i class="fas fa-code"></i><span>development</span></a>
-                    <a href="#"><i class="fas fa-chart-simple"></i><span>buisness</span></a>
-                    <a href="#"><i class="fas fa-pen"></i><span>design</span></a>
-                    <a href="#"><i class="fas fa-chart-line"></i><span>marketing</span></a>
-                    <a href="#"><i class="fas fa-music"></i><span>music</span></a>
-                    <a href="#"><i class="fas fa-camera"></i><span>photography</span></a>
-                    <a href="#"><i class="fas fa-cog"></i><span>software</span></a>
-                    <a href="#"><i class="fas fa-vial"></i><span>science</span></a>
-                </div>
-            </div>
-
-            <div class="box">
-                <h3 class="title">Popular Topics</h3>
-                <div class="flex">
-                    <a href="#"><i class="fab fa-html5"></i><span>HTML5</span></a>
-                    <a href="#"><i class="fab fa-css3"></i><span>CSS</span></a>
-                    <a href="#"><i class="fab fa-js"></i><span>JavaScript
-                    </span></a>
-                    <a href="#"><i class="fab fa-react"></i><span>React</span></a>
-                    <a href="#"><i class="fab fa-php"></i><span>PHP</span></a>
-                    <a href="#"><i class="fab fa-bootstrap"></i><span>Bootstrap</span></a>
-                </div>
-            </div>
-
-            <div class="box tutor">
-                <h3 class="title">become a tutor</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis molestias veritatis facere ipsam illo nisi.</p>
-                <a href="register.html" class="inline-btn">get started</a>
-            </div>
-        </div>
-    </section>
-    <!-- quick select selection ends -->
-
-    <!-- courses section starts -->
-    <section class="courses">
-        <h1 class="heading">Our Courses</h1>
-        <div class="box-container">
-            <div class="box">
-                <div class="tutor">
-                    <img src="img/about/a1.png" alt="">
-                    <h3>Mark</h3>
-                    <span>23-03-2024</span>
-                </div>
-                <img src="img/about/a1.png" class="thumb" alt="">
-                <h3 class="title">complete marketing tutorial</h3>
-                <a href="playlist.html" class="inline-btn">view playlist</a>
-            </div>
-
-            <div class="box">
-                <div class="tutor">
-                    <img src="img/about/a1.png" alt="">
-                    <h3>Mark</h3>
-                    <span>23-03-2024</span>
-                </div>
-                <img src="img/about/a1.png" class="thumb" alt="">
-                <h3 class="title">complete marketing tutorial</h3>
-                <a href="playlist.html" class="inline-btn">view playlist</a>
-            </div>
-
-            <div class="box">
-                <div class="tutor">
-                    <img src="img/about/a1.png" alt="">
-                    <h3>Mark</h3>
-                    <span>23-03-2024</span>
-                </div>
-                <img src="img/about/a1.png" class="thumb" alt="">
-                <h3 class="title">complete marketing tutorial</h3>
-                <a href="playlist.html" class="inline-btn">view playlist</a>
-            </div>
-
-            <div class="box">
-                <div class="tutor">
-                    <img src="img/about/a1.png" alt="">
-                    <h3>Mark</h3>
-                    <span>23-03-2024</span>
-                </div>
-                <img src="img/about/a1.png" class="thumb" alt="">
-                <h3 class="title">complete marketing tutorial</h3>
-                <a href="playlist.html" class="inline-btn">view playlist</a>
-            </div>
-
-            <div class="box">
-                <div class="tutor">
-                    <img src="img/about/a1.png" alt="">
-                    <h3>Mark</h3>
-                    <span>23-03-2024</span>
-                </div>
-                <img src="img/about/a1.png" class="thumb" alt="">
-                <h3 class="title">complete marketing tutorial</h3>
-                <a href="playlist.html" class="inline-btn">view playlist</a>
-            </div>
-
-            <div class="box">
-                <div class="tutor">
-                    <img src="img/about/a1.png" alt="">
-                    <h3>Mark</h3>
-                    <span>23-03-2024</span>
-                </div>
-                <img src="img/about/a1.png" class="thumb" alt="">
-                <h3 class="title">complete marketing tutorial</h3>
-                <a href="playlist.html" class="inline-btn">view playlist</a>
-            </div>
-   
-        </div>
-        <div class="more-btn">
-            <a href="courses.html" class="inline-option-btn">view more</a>
-        </div>
-    </section>
-    <!-- courses section ends -->
-
-    <!-- footer section starts -->
-    <footer class="footer">
-        &copy; copyright @ 2024 by <span>Muhammad Taha Hussain </span>| all right reserved.
-    </footer>
-    <!-- footer section ends -->
-
+    
 
 
 
 
 
     <!-- custom js file link -->
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
