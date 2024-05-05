@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="Tooplate">
+
+        <title>Punjab Schools Website</title>
+
+        <!-- CSS FILES -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+                
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="./css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="./css/style.css" rel="stylesheet">
+
+    </head>
+<body>
+    <!-- header section starts -->
+    <header class="header">
+        <section class="flex">
+            <a href="home.html" class="logo">Punjab Schools System</a>
+            <form action="" method="post" class="search-form">
+                <input type="text" name="search-box" placeholder="search courses..." required maxlength="100">
+                <button type="submit" class="fas fa-search" name="search-box"></button>
+            </form>
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="toggle-btn" class="fas fa-sun"></div>
+            </div>
+            <div class="profile">
+                <img src="img/banner/b1.jpg" alt="">
+                <h3>Taha Hussain</h3>
+                <span>student</span>
+                <a href="profile.html" class="menu-btn">View Profile</a>
+                <div class="flex-btn">
+                    <a href="login.html" class="option-btn">Login</a>
+                    <a href="register.html" class="option-btn">Register</a>
+                </div>
+            </div>
+        </section>
+
+
+    </header>
+
+
+    <!-- header section ends -->
+    <!-- side bar section starts -->
+    <div class="grid">
+        <div class="side-bar"> 
+            <div class="close-side-bar">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="profile">
+                <img src="img/banner/b1.jpg" alt="">
+                <h3>Taha Hussain</h3>
+                <span>student</span>
+                <a href="profile.html" class="menu-btn">View Profile</a>
+            </div>
+            <nav class="navbar">
+                <a href="home.html"><i class="fas fa-home"><span>Home</span></i></a>
+                <a href="about.html"><i class="fas fa-question"><span>about us</span></i></a>
+                <a href="courses.html"><i class="fas fa-graduation-cap"><span>courses</span></i></a>
+                <a href="teachers.html"><i class="fas fa-chalkboard-user"><span>teachers</span></i></a>
+                <a href="contact.html"><i class="fas fa-headset"><span>contact us</span></i></a>
+            </nav>
+        </div> 
+        <!-- side bar section ends -->
+        <div class="main">
+            <!-- quick select selection starts -->
+        <section class="quick-select">
+            <h1 class="heading">Quick Options</h1>
+            <div class="box-container">
+    
+                <div class="box">
+                    <h3 class="title">likes and comments</h3>
+                    <p>Total Likes <span>14</span></p>
+                    <a href="#" class="inline-btn">view likes</a>
+                    <p>Total Comments <span>5</span></p>
+                    <a href="#" class="inline-btn">view comments</a>
+                    <p>Total Playlist <span>10</span></p>
+                    <a href="#" class="inline-btn">view playlist</a>
+                </div>
+    
+                <div class="box">
+                    <h3 class="title">Top Categories</h3>
+                    <div class="flex">
+                        <a href="#"><i class="fas fa-code"></i><span>development</span></a>
+                        <a href="#"><i class="fas fa-chart-simple"></i><span>buisness</span></a>
+                        <a href="#"><i class="fas fa-pen"></i><span>design</span></a>
+                        <a href="#"><i class="fas fa-chart-line"></i><span>marketing</span></a>
+                        <a href="#"><i class="fas fa-music"></i><span>music</span></a>
+                        <a href="#"><i class="fas fa-camera"></i><span>photography</span></a>
+                        <a href="#"><i class="fas fa-cog"></i><span>software</span></a>
+                        <a href="#"><i class="fas fa-vial"></i><span>science</span></a>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <h3 class="title">Popular Topics</h3>
+                    <div class="flex">
+                        <a href="#"><i class="fab fa-html5"></i><span>HTML5</span></a>
+                        <a href="#"><i class="fab fa-css3"></i><span>CSS</span></a>
+                        <a href="#"><i class="fab fa-js"></i><span>JavaScript
+                        </span></a>
+                        <a href="#"><i class="fab fa-react"></i><span>React</span></a>
+                        <a href="#"><i class="fab fa-php"></i><span>PHP</span></a>
+                        <a href="#"><i class="fab fa-bootstrap"></i><span>Bootstrap</span></a>
+                    </div>
+                </div>
+    
+                <div class="box tutor">
+                    <h3 class="title">become a tutor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis molestias veritatis facere ipsam illo nisi.</p>
+                    <a href="register.html" class="inline-btn">get started</a>
+                </div>
+            </div>
+        </section>
+        <!-- quick select selection ends -->
+    
+        <!-- courses section starts -->
+        <section class="courses">
+            <h1 class="heading">Our Courses</h1>
+            <div class="box-container">
+                <div class="box">
+                    <div class="tutor">
+                        <img src="img/about/a1.png" alt="">
+                        <h3>Mark</h3>
+                        <span>23-03-2024</span>
+                    </div>
+                    <img src="img/about/a1.png" class="thumb" alt="">
+                    <h3 class="title">complete marketing tutorial</h3>
+                    <a href="playlist.html" class="inline-btn">view playlist</a>
+                </div>
+    
+                <div class="box">
+                    <div class="tutor">
+                        <img src="img/about/a1.png" alt="">
+                        <h3>Mark</h3>
+                        <span>23-03-2024</span>
+                    </div>
+                    <img src="img/about/a1.png" class="thumb" alt="">
+                    <h3 class="title">complete marketing tutorial</h3>
+                    <a href="playlist.html" class="inline-btn">view playlist</a>
+                </div>
+    
+                <div class="box">
+                    <div class="tutor">
+                        <img src="img/about/a1.png" alt="">
+                        <h3>Mark</h3>
+                        <span>23-03-2024</span>
+                    </div>
+                    <img src="img/about/a1.png" class="thumb" alt="">
+                    <h3 class="title">complete marketing tutorial</h3>
+                    <a href="playlist.html" class="inline-btn">view playlist</a>
+                </div>
+    
+                <div class="box">
+                    <div class="tutor">
+                        <img src="img/about/a1.png" alt="">
+                        <h3>Mark</h3>
+                        <span>23-03-2024</span>
+                    </div>
+                    <img src="img/about/a1.png" class="thumb" alt="">
+                    <h3 class="title">complete marketing tutorial</h3>
+                    <a href="playlist.html" class="inline-btn">view playlist</a>
+                </div>
+    
+                <div class="box">
+                    <div class="tutor">
+                        <img src="img/about/a1.png" alt="">
+                        <h3>Mark</h3>
+                        <span>23-03-2024</span>
+                    </div>
+                    <img src="img/about/a1.png" class="thumb" alt="">
+                    <h3 class="title">complete marketing tutorial</h3>
+                    <a href="playlist.html" class="inline-btn">view playlist</a>
+                </div>
+    
+                <div class="box">
+                    <div class="tutor">
+                        <img src="img/about/a1.png" alt="">
+                        <h3>Mark</h3>
+                        <span>23-03-2024</span>
+                    </div>
+                    <img src="img/about/a1.png" class="thumb" alt="">
+                    <h3 class="title">complete marketing tutorial</h3>
+                    <a href="playlist.html" class="inline-btn">view playlist</a>
+                </div>
+       
+            </div>
+            <div class="more-btn">
+                <a href="courses.html" class="inline-option-btn">view more</a>
+            </div>
+        </section>
+        <!-- courses section ends -->
+    
+        <!-- footer section starts -->
+        <!-- <footer class="footer">
+            &copy; copyright @ 2024 by <span>Muhammad Taha Hussain </span>| all right reserved.
+        </footer> -->
+        <!-- footer section ends --> 
+        </div>   
+
+    </div>
+    
+
+
+
+
+
+    <!-- custom js file link -->
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

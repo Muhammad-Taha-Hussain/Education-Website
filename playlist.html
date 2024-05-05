@@ -2,20 +2,36 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <!-- font awesome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <!-- custom css link -->
-    <link rel="stylesheet" href="css/style.css">a
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="Tooplate">
+
+    <title>Punjab Schools Website</title>
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+            
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="./css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="./css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
     <!-- header section starts -->
     <header class="header">
         <section class="flex">
-            <a href="home.html" class="logo">Imperial COMSAT Academy</a>
+            <a href="home.html" class="logo">Punjab group of Schools</a>
             <form action="" method="post" class="search-form">
                 <input type="text" name="search-box" placeholder="search courses..." required maxlength="100">
                 <button type="submit" class="fas fa-search" name="search-box"></button>
@@ -70,10 +86,13 @@
             <div class="col">
                 <form action="" method="post" class="save-list">
                     <button type="submit" name="save_list">
-                        <i class="far fa-bookmart"></i><span>save playlist</span>
+                        <i class="far fa-bookmark"></i><span>save playlist</span>
                     </button>
                 </form>
-                <img src="img/logo.png" alt="" class="thumb">
+                <div class="thumb">
+                    <span>6 videos</span>
+                    <img src="img/blog/b1.jpg" alt="">
+                </div>  
             </div>
             <div class="col">
                 <div class="tutor">
@@ -94,6 +113,38 @@
     </section>
 
     <!-- playlist section ends -->
+
+    <!-- videos container section starts -->
+    <section class="videos-container">
+        <h1 class="heading">Playlist Videos</h1>
+        <div class="box-container">
+            <a href="watch-video.html" class="box">
+                <i class="fas fa-play"></i>
+                <img src="img/people/2.png" alt="">
+                <h3>complete HTML tutorial (part 01)</h3>
+            </a>
+
+            <a href="watch-video.html" class="box">
+                <i class="fas fa-play"></i>
+                <img src="img/people/2.png" alt="">
+                <h3>complete HTML tutorial (part 02)</h3>
+            </a>
+
+            <a href="watch-video.html" class="box">
+                <i class="fas fa-play"></i>
+                <img src="img/people/2.png" alt="">
+                <h3>complete HTML tutorial (part 03)</h3>
+            </a>
+
+            <a href="watch-video.html" class="box">
+                <i class="fas fa-play"></i>
+                <img src="img/people/2.png" alt="">
+                <h3>complete HTML tutorial (part 04)</h3>
+            </a>
+
+        </div>
+    </section>
+    <!-- videos container section ends -->
 
     <!-- footer section starts -->
     <footer class="footer">
