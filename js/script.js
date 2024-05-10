@@ -14,23 +14,25 @@ document.querySelector('#search-btn').onclick = () =>{
 
 
 let sideBar = document.querySelector('.side-bar');
+let main = document.querySelector('.main');
 document.querySelector('#menu-btn').onclick = () =>{
     sideBar.classList.toggle('active');
-    body.classList.toggle('active')
+    main.classList.toggle('active');
 }
 document.querySelector('.side-bar .close-side-bar').onclick = () =>{
-    sideBar.classList.remove('active');
-    body.classList.remove('active')
+    sideBar.classList.add('active');
+    main.classList.add('active');
 }
 
-window.onscroll = () =>{
-    profile.classList.remove('active');
-    searchform.classList.remove('active');
-    if(window.innerWidth < 1200) {
-        sideBar.classList.remove('active');
-        body.classList.remove('active')
-    }
-}
+// window.onscroll = () =>{
+//     profile.classList.remove('active');
+//     searchform.classList.remove('active');
+//     if(window.innerWidth < 1200) {
+//         sideBar.classList.add('active');
+//         main.classList.add('active');
+//         body.classList.remove('active')
+//     }
+// }
 
 let toggleBtn = document.querySelector('#toggle-btn');
 let darkMode = localStorage.getItem('dark-mode');
