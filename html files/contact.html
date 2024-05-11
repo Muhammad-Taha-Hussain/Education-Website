@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="Tooplate">
+
+        <title>Punjab Schools Website</title>
+
+        <!-- CSS FILES -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+                
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="../css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="../css/style.css" rel="stylesheet">
+
+    </head>
+<body>
+    <!-- header section starts -->
+    <header class="header">
+        <section class="flex">
+            <a href="home.html" class="logo">Punjab Schools System</a>
+            <form action="" method="post" class="search-form">
+                <input type="text" name="search-box" placeholder="search courses..." required maxlength="100">
+                <button type="submit" class="fas fa-search" name="search-box"></button>
+            </form>
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="toggle-btn" class="fas fa-sun"></div>
+            </div>
+            <div class="profile">
+                <img src="../img/banner/b1.jpg" alt="">
+                <h3>Taha Hussain</h3>
+                <span>student</span>
+                <a href="profile.html" class="menu-btn">View Profile</a>
+                <div class="flex-btn">
+                    <a href="login.html" class="option-btn">Login</a>
+                    <a href="register.html" class="option-btn">Register</a>
+                </div>
+            </div>
+        </section>
+
+
+    </header>
+
+    <!-- header section ends -->
+    
+    <!-- side bar section starts -->
+        <div class="side-bar"> 
+            <div class="close-side-bar">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="profile">
+                <img src="../img/banner/b1.jpg" alt="">
+                <h3>Taha Hussain</h3>
+                <span>student</span>
+                <a href="profile.html" class="menu-btn">View Profile</a>
+            </div>
+            <nav class="navbar">
+                <a href="home.html"><i class="fas fa-home"><span>Home</span></i></a>
+                <a href="about.html"><i class="fas fa-question"><span>about us</span></i></a>
+                <a href="courses.html"><i class="fas fa-graduation-cap"><span>courses</span></i></a>
+                <a href="teachers.html"><i class="fas fa-chalkboard-user"><span>teachers</span></i></a>
+                <a href="contact.html"><i class="fas fa-headset"><span>contact us</span></i></a>
+            </nav>
+        </div> 
+
+    <!-- side bar section ends -->
+
+    
+    <div class="main">
+
+        <!-- contact section starts -->
+
+        <section class="contact">
+            <div class="row">
+                <div class="image">
+                    <img src="../img/about/a1.png" alt="">
+                </div>
+                <form action="" method="post">
+                    <h3>get in touch</h3>
+                    <input type="text" placeholder="enter your name" name="name" required maxlength="20" class="box">
+                    <input type="email" placeholder="enter your email" name="email" required maxlength="20" class="box">
+                    <input type="number" placeholder="enter your number" name="number" required maxlength="20" class="box">
+                    <textarea name="msg" id="" cols="30" rows="10" class="box" placeholder="enter your message"></textarea>
+                    <input type="submit" value="send message" class="inline-btn" name="submit">
+                </form>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone Number</h3>
+                    <a href="tel:1234456">0308-4591990</a>
+                    <a href="tel:1234456">0308-4591990</a>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Address</h3>
+                    <a href="fa21-bcs122@gmial.com">fa21-bcs122@gmial.com</a>
+                    <a href="fa21-bcs122@gmial.com">fa21-bcs122@gmial.com</a>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>office address</h3>
+                    <a href="tel:1234456">0308-4591990</a>
+                    <a href="tel:1234456">0308-4591990</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact section ends -->
+    
+        <!-- footer section starts -->
+
+        <footer class="footer">
+            &copy; copyright @ 2024 by <span>Muhammad Taha Hussain </span>| all right reserved.
+        </footer>
+
+        <!-- footer section ends --> 
+    </div>    
+
+    <!-- custom js file link -->
+    <!-- JAVASCRIPT FILES -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
