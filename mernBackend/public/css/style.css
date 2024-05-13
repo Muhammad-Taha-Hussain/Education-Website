@@ -248,6 +248,9 @@ header .flex .profile span {
     color: var(--light-color);
     font-size: 1.6rem;
 }
+header .flex .profile .flex-btn {
+    display: block;
+}
 .side-bar {
     position: fixed;
     top: 8rem;
@@ -1132,15 +1135,41 @@ header .flex .profile span {
     font-size: 1.5rem;
     color: var(--light-color);
 }
-/* update css */
+/* login css */
 .form-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: calc(100vh - 20rem);
+    background-color: var(--white);
+    width: 50rem;
+    border-radius: .5rem;
+    padding: 2rem;
+    margin-top: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.form-container .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 40rem;
+}
+.form-container .flex a {
+    text-decoration: none;
+}
+.form-container .flex h3 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--black);
+}
+.form-container .flex h3:hover {
+    color: var(--main-color);
 }
 .form-container form {
-    background-color: var(--white);
+    align-items: center;
+    justify-content: center;
     border-radius: .5rem;
     padding: 2rem;
     width: 50rem;
@@ -1148,7 +1177,6 @@ header .flex .profile span {
 .form-container form h3 {
     text-align: center;
     font-size: 3rem;
-    margin-bottom: 1rem;
     color: var(--black);
 }
 .form-container form h3:hover {
@@ -1161,6 +1189,20 @@ header .flex .profile span {
 }
 .form-container form p  span {
     color: var(--red);
+}
+.form-container form a {
+    display: block;
+    text-align: right;
+    margin-right: 1rem;
+    font-size: large;
+    justify-content: center;
+}
+.form-container form a:hover {
+    font-size: large;
+    color: blue;
+    font-weight: 300;
+    text-decoration: underline;
+
 }
 .form-container form .box {
     width: 100%;
