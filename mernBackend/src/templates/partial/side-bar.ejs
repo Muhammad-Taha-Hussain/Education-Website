@@ -1,0 +1,18 @@
+<div class="side-bar">
+    <div class="close-side-bar">
+        <i class="fas fa-times"></i>
+    </div>
+    <div class="profile">
+        <img src= "<%= userProfilePic %>" alt="Profile Picture" class="profile-pic">
+        <h3><%= userName %></h3>
+        <span>student</span>
+        <a href="/profile/<%= userId %>" class="menu-btn">View Profile</a>
+    </div>
+    <nav class="navbar">
+        <a href="/home/<%= userId %>"><i class="fas fa-home"><span>Home</span></i></a>
+        <a href="/about/<%= userId %>"><i class="fas fa-question"><span>about us</span></i></a>
+        <a href="/courses/<%= userId %>"><i class="fas fa-graduation-cap"><span>courses</span></i></a>
+        <a href="/teachers/<%= userId %>"><i class="fas fa-chalkboard-user"><span>teachers</span></i></a>
+        <a href="/contact/<%= userId %>"><i class="fas fa-headset"><span>contact us</span></i></a>
+    </nav>
+</div>

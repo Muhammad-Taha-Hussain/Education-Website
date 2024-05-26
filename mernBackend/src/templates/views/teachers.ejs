@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="Tooplate">
+
+        <title>Punjab Schools Website</title>
+
+        <!-- CSS FILES -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+                
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="../css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="../css/style.css" rel="stylesheet">
+
+    </head>
+<body>
+
+    <!-- header section starts -->
+
+    <%- include("../partial/navbar") %>
+    
+    <!-- header section ends -->    
+    
+    <!-- side bar section starts -->
+
+    <%- include("../partial/side-bar") %>
+    
+    <!-- side bar section ends -->
+
+    <div class="main">
+
+        <!-- teachers section starts -->
+        <section class="teacher">
+            <h1 class="heading">expert tutors</h1>
+            <form action="" method="post" class="search-tutor">
+                <input type="text" name="search_box" maxlength="100" placeholder="search tutor..." required>
+                <button type="submit" name="search_tutor" class="fas fa-search"></button>
+            </form>
+    
+            <div class="box-container">
+                <div class="box offer">
+                    <h3>become a tutor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore pariatur ab repellendus at, quaerat a eos
+                        soluta deserunt.</p>
+                    <a href="/register" class="inline-btn">get started</a>
+                </div>
+                <div class="box">
+                    <div class="tutor">
+                        <img src="../img/people/1.png" alt="">
+                        <div>
+                            <h3>John Doe</h3>
+                            <span>developer</span>
+                        </div>
+                    </div>
+                    <p>playlists: <span>4</span></p>
+                    <p>total videos: <span>18</span></p>
+                    <p>total likes: <span>1208</span></p>
+                    <a href="/teacher_profile/<%= userId %>" class="inline-btn">view profile</a>
+                </div>
+            
+                <div class="box">
+                    <div class="tutor">
+                        <img src="../img/people/2.png" alt="">
+                        <div>
+                            <h3>John Doe</h3>
+                            <span>developer</span>
+                        </div>
+                    </div>
+                    <p>playlists: <span>4</span></p>
+                    <p>total videos: <span>18</span></p>
+                    <p>total likes: <span>1208</span></p>
+                    <a href="/teacher_profile/<%= userId %>" class="inline-btn">view profile</a>
+                </div>
+            
+                <div class="box">
+                    <div class="tutor">
+                        <img src="../img/people/3.png" alt="">
+                        <div>
+                            <h3>John Doe</h3>
+                            <span>developer</span>
+                        </div>
+                    </div>
+                    <p>playlists: <span>4</span></p>
+                    <p>total videos: <span>18</span></p>
+                    <p>total likes: <span>1208</span></p>
+                    <a href="/teacher_profile/<%= userId %>" class="inline-btn">view profile</a>
+                </div>
+            
+                <div class="box">
+                    <div class="tutor">
+                        <img src="../img/people/1.png" alt="">
+                        <div>
+                            <h3>John Doe</h3>
+                            <span>developer</span>
+                        </div>
+                    </div>
+                    <p>playlists: <span>4</span></p>
+                    <p>total videos: <span>18</span></p>
+                    <p>total likes: <span>1208</span></p>
+                    <a href="/teacher_profile/<%= userId %>" class="inline-btn">view profile</a>
+                </div>
+            </div>
+    
+        </section>
+
+        <!-- teachers section ends -->
+
+        <!-- footer section starts -->
+    
+        <%- include("../partial/footer") %>
+    
+        <!-- footer section ends -->
+         
+    </div>
+
+    
+    
+        
+    
+
+
+
+
+
+    <!-- custom js file link -->
+    <!-- JAVASCRIPT FILES -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

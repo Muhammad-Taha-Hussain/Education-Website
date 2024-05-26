@@ -57,3 +57,8 @@ toggleBtn.onclick = (e) => {
         disableDarkMode();
     }
 }
+$(document).ready(function(){
+    $(".comment form").submit(function(){
+      alert("Submitted");
+    });
+  });

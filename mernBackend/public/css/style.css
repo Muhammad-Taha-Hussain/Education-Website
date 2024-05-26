@@ -546,6 +546,7 @@ header .flex .profile .flex-btn {
     bottom: 0;
     right: 0;
     left: 0;
+    width: 100%;
     margin-top: 5%;
     background-color: var(--white);
     border-top: var(--border);
@@ -717,55 +718,56 @@ header .flex .profile .flex-btn {
 /* playlist section ends */
 
 /* watch_video css starts */
-.grid .watch-video .video-details {
+.main .watch-video .video-details {
     background-color: var(--white);
     padding: 2rem;
 }
-.grid .watch-video .video-details .video {
-    width: 100%;
+.main .watch-video .video-details video {
+    width: 80%;
+    object-fit: cover;
     border-radius: .5rem;
     margin-bottom: 1rem;
 }
-.grid .watch-video .video-details .title {
+.main .watch-video .video-details .title {
     font-size: 2rem;
     color: var(--black);
     padding: 1.5rem 0;
 }
-.grid .watch-video .video-details .info {
+.main .watch-video .video-details .info {
         display: flex;
         gap: 2rem;
         margin-bottom: 1rem;
         padding-bottom: 1.5rem;
         border-bottom: var(--border);
 }
-.grid .watch-video .video-details .info p {
+.main .watch-video .video-details .info p {
     font-size: 1.6rem;
 }
-.grid .watch-video .video-details .info p i {
+.main .watch-video .video-details .info p i {
     margin-right: 1rem;
     color: var(--main-color);
 }
-.grid .watch-video .video-details .info p i span {
+.main .watch-video .video-details .info p  span {
     color: var(--light-color);
 }
-.grid .watch-video .video-details .tutor {
+.main .watch-video .video-details .tutor {
     padding: 2rem 0;
     display: flex;
     align-items: center;
     gap: 2rem;
 }
-.grid .watch-video .video-details .tutor img {
+.main .watch-video .video-details .tutor img {
     height: 7rem;
     width: 7rem;
     border-radius: 50%;
     object-fit: cover;
 }
-.grid .watch-video .video-details .tutor h3 {
+.main .watch-video .video-details .tutor h3 {
     font-size: 2rem;
     color: var(--black);
     margin-bottom: .2rem;
 }
-.grid .watch-video .video-details .tutor span {
+.main .watch-video .video-details .tutor span {
     color: var(--light-color);
     font-size: 1.5rem;
 }
@@ -824,36 +826,48 @@ header .flex .profile .flex-btn {
     width: 100%;
     height: 20rem;
     background-color: var(--light-color);
+    color: var(--light-bg);
     resize: none;
 }
-.comment .show-comment {
-    background-color: var(--white);
-    border-radius: .5rem;
-    padding: 2rem;
+
+.comment .show-comment  div {
+    padding: 0rem 2rem;
     display: grid;
-    gap: 2.5rem;
+    border-radius: .5rem;
+    gap: 1rem;
+    background-color: var(--white);
 }
-.comment .show-comment .user {
+.comment .show-comment  div .user {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    margin-top: 2rem;
 }
-.comment .show-comment .user img {
+.comment .show-comment  div .user img {
     height: 5rem;
     width: 5rem;
     border-radius: 50%;
     object-fit: cover;
 }
-.comment .show-comment .user h3 {
+.comment .show-comment div .user div {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.comment .show-comment div .user h3 {
     font-size: 2rem;
     color: var(--black);
     margin-bottom: .2rem;
 }
-.comment .show-comment .user span {
+.comment .show-comment div .user span {
     color: var(--light-color);
     font-size: 1.5rem;
 }
-.comment .show-comment .box .text {
+.comment .show-comment div .box .flex {
+    display: flex;
+    align-items: center;
+    float: right;
+}
+.comment .show-comment div .box .text {
     font-size: 1.8rem;
     border-radius: .5rem;
     background-color: var(--light-bg);
@@ -862,15 +876,34 @@ header .flex .profile .flex-btn {
     margin: .5rem 0;
     position: relative;
     z-index: 0;
-    white-space: pre-line;
 }
-.comment .show-comment .box .text::before{
+.comment .show-comment div .box .text::before{
     content: "";
     position: absolute;
     top: -1rem; left: 1.5rem;
     height: 1.2rem;
     width: 2rem;
     border-color: var(--light-bg);
+}
+
+.comment .show-comment div .box .reply-form {
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.comment .show-comment div .box .reply-form textarea {
+    color: var(--light-bg);
+    height: 5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-size: 2rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    width: 70%;
+    background-color: var(--light-color);
+    resize: none;
 }
 /* teacher page css */
 .teacher .search-tutor {

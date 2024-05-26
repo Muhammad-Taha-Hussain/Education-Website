@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="Tooplate">
+
+    <title>Punjab Schools Website</title>
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+            
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="../css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- header section starts -->
+
+    <%- include("../partial/navbar") %>    
+
+    <!-- header section ends --> 
+
+    
+    <!-- side bar section starts -->
+
+    <%- include("../partial/side-bar") %>
+    
+    <!-- side bar section ends -->    
+    
+    <div class="main">
+        <!-- playlist section starts -->
+
+        <section class="playlist">
+            <h1 class="heading">playlist details</h1>
+            <div class="row">
+                <div class="col">
+                    <form action="" method="post" class="save-list">
+                        <button type="submit" name="save_list">
+                            <i class="far fa-bookmark"></i><span>save playlist</span>
+                        </button>
+                    </form>
+                    <div class="thumb">
+                        <span>6 videos</span>
+                        <img src="../img/blog/b1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="tutor">
+                        <img src="../img/hero4.png" alt="">
+                        <div>
+                            <h3>john doe</h3>
+                            <span>developer</span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <h3>complete html tutorial</h3>
+                        <div class="date"><i class="fas fa-calendar"></i><span>21-25-2022</span></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ea distinctio dignissimos
+                            sint sit vel.</p>
+    
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- playlist section ends -->
+    
+        <!-- videos container section starts -->
+
+        <section class="videos-container">
+            <h1 class="heading">Playlist Videos</h1>
+            <div class="box-container">
+                <% videos.forEach(video => { %>
+                    <div class="box">
+                        <video width="320" height="240" id="myVideo">
+                            <source src="/videos/<%= video.path %>" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3 class="title"><%= video.title %></h3>
+                        <a href="/watch-video/<%= userId %>/<%= video._id %>" class="inline-btn">go to video</a>
+                    </div>
+                <% }) %>
+                <a href="/watch-video" class="box">
+                    <i class="fas fa-play"></i>
+                    <img src="../img/people/2.png" alt="">
+                    <h3>complete HTML tutorial (part 01)</h3>
+                </a>
+    
+            </div>
+        </section>
+
+        <!-- videos container section ends -->
+    
+        <!-- footer section starts -->
+
+        <!-- footer section starts -->
+    
+        <%- include("../partial/footer") %>
+    
+        <!-- footer section ends -->
+        
+
+    </div>
+ 
+    <!-- custom js file link -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const video = document.getElementById("myVideo");
+    
+            video.addEventListener("mouseover", function() {
+                video.play();
+            });
+    
+            video.addEventListener("mouseleave", function() {
+                video.pause();
+            });
+        });
+    </script>
+    <!-- JAVASCRIPT FILES -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

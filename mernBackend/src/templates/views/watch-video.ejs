@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Tooplate">
+    <title>Punjab Schools Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-icons.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- header section starts -->
+    <%- include("../partial/navbar") %>
+    <!-- header section ends -->
+
+    <!-- side bar section starts -->
+    <%- include("../partial/side-bar") %>
+    <!-- side bar section ends -->
+
+    <div class="main">
+        <!-- watch videos section starts -->
+        <section class="watch-video">
+            <div class="video-details">
+                <video src="/videos/<%= video.path %>" class="video" poster="/images/<%= video.thumbnail %>" controls autoplay></video>
+                <h3 class="title"><%= video.title %></h3>
+                <div class="info">
+                    <p><i class="fas fa-calendar"></i><span><%= new Date(video.createdAt).toLocaleDateString() %></span></p>
+                    <p><i class="fas fa-heart"></i><span><%= video.likes.length %></span></p>
+                </div>
+                <div class="tutor">
+                    <img src="/images/<%= video.uploaderAvatar %>" alt="">
+                    <div>
+                        <h3><%= video.uploaderName %></h3>
+                        <span>developer</span>
+                    </div>
+                </div>
+                <form action="/like-video/<%= userId %>/<%= video._id %>" method="post" class="flex">
+                    <a href="/playlist/<%= userId %>" class="inline-btn">view playlist</a>
+                    <button type="submit" class="inline-btn"><i class="far fa-heart"></i><span><%= userHasLiked ? 'Unlike' : 'Like' %></span></button>
+                </form>
+                <div class="description">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores iure ullam voluptas voluptates
+                        minus veritatis fugit qui, nostrum nisi incidunt.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed doloremque velit quisquam perferendis
+                        recusandae, perspiciatis fugit beatae nulla rerum libero doloribus vel veniam obcaecati aliquam
+                        voluptas corrupti quidem nobis? In!</p>
+                </div>
+            </div>
+        </section>
+        <!-- watch videos section ends -->
+        
+        <section class="comment">
+            <h1 class="heading">Add Comment</h1>
+            <form action="/add-comment/<%= userId %>/<%= video._id %>" method="post" class="add-comment">
+                <h3>Add Comment</h3>
+                <textarea name="content" required placeholder="write your comments here..." maxlength="1000" cols="30"
+                    rows="10"></textarea>
+                <input type="hidden" name="videoId" value="<%= video._id %>">
+                <input type="submit" value="add comment" name="add_comment" class="inline-btn">
+            </form>
+            <h1 class="heading">
+                <%= video.comments.length %> Comments
+            </h1>
+            <div class="show-comment">
+                <% video.comments.forEach(comment=> { %>
+                    <div>
+                        <div class="box">
+                            <div class="user">
+                                <img src="/" alt="">
+                                <div>
+                                    <h3>Taha</h3>
+                                    <span>
+                                        <%= new Date(comment.createdAt).toLocaleDateString() %>
+                                    </span>
+                                </div>
+                            </div>
+                            <p class="text">
+                                <%= comment.content %>
+                            </p>
+                            <div class="flex">
+                                <form action="/edit-comment/<%= comment._id %>" class="flex-btn" method="post">
+                                    <button type="submit" name="edit_comment" class="inline-option-btn">edit comment</button>
+                                </form>
+                                <form action="/delete-comment/<%= userId %>/<%= video._id %>/<%= comment._id %>" class="flex-btn" method="post">
+                                    <button type="submit" name="delete_comment" class="inline-delete-btn">delete comment</button>
+                                </form>
+                            </div>
+                            <form action="/reply-comment/<%= userId %>/<%= video._id %>/<%= comment._id %>" class="reply-form"
+                                method="post">
+                                <textarea name="content" required placeholder="write your replies here..." maxlength="500"
+                                    cols="30" rows="10"></textarea>
+                                <input type="hidden" name="videoId" value="<%= video._id %>">
+                                <input type="submit" value="reply comment" name="reply_comment" class="inline-btn">
+                            </form>
+                            <% if (comment.replies && comment.replies.length> 0) { %>
+                                <h1 class="heading">
+                                    <%= comment.replies.length %> Comments
+                                </h1>
+                                <div class="replies">
+                                    <% comment.replies.forEach(reply=> { %>
+                                        <div class="reply">
+                                            <div class="user">
+                                                <img src="/" alt="">
+                                                <div>
+                                                    <h3>Taha</h3>
+                                                    <span>
+                                                        <%= new Date(reply.createdAt).toLocaleDateString() %>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <p class="text">
+                                                <%= reply.content %>
+                                            </p>
+                                            <form action="/edit-comment/<%= comment._id %>" class="flex-btn" method="post">
+                                                <button type="submit" name="edit_comment" class="inline-option-btn">edit
+                                                    comment</button>
+                                            </form>
+                                            <form action="/delete-comment/<%= userId %>/<%= video._id %>/<%= reply._id %>"
+                                                class="flex-btn" method="post">
+                                                <button type="submit" name="delete_comment" class="inline-delete-btn">delete
+                                                    comment</button>
+                                            </form>
+                                        </div>
+                                        <% }) %>
+                                </div>
+                                <% } %>
+                        </div>
+                    </div>
+                <% }) %>
+                    
+            </div>
+            </section>
+
+        <!-- comments section ends -->
+
+        <!-- footer section starts -->
+        <%- include("../partial/footer") %>
+        <!-- footer section ends -->
+    </div>
+
+    <!-- custom js file link -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
